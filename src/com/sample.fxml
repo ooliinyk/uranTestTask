@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.Controller">
+  <center>
+    <ListView fx:id="fileList" />
+  </center>
+  <top>
+    <VBox prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <children>
+        <MenuBar>
+          <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Close" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="About" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+        <HBox prefHeight="28.0" prefWidth="600.0">
+          <children>
+            <Button fx:id="back" mnemonicParsing="false" text="Back" />
+            <TextField fx:id="addressBar" promptText="File Path" HBox.hgrow="ALWAYS" />
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </top>
+</BorderPane>
